@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fim de Jogo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        body{
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+        }
+
+         .containerFim{
+            width: 90vw;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+       
+
+        #imgFim{
+            width: 85vh;
+            height: 85vh;
+            margin: 0 auto;
+        }
+
+        #voltar{
+            width: 5em;
+            height: 3em;
+            margin-top: 3px;
+            border-radius: 20px;
+            border-width: 3px;
+            box-shadow: 2px 3px 10px black;
+            font-size: 25px;
+            font-weight: bold;
+            background-color: rgb(126, 122, 122);
+            color: bisque;
+            display: flex;
+            justify-content: center;
+        }
+
+        #voltar:hover{
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="containerFim">
+        <img src="imagens/game_over.png" alt="Imagem fim de jogo" id="imgFim"> <br>
+        <a id="voltar" href="game.html">Voltar</a>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(imagens/bg_principal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container_home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    overflow:hidden ;
+}
+
+.bg_home{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.img_abertura{
+    position: relative;
+    z-index: 1;
+}
+
+#nivel{
+    border: solid;
+    border-radius: 20px;
+    width:11rem;
+    height: 2.5rem;
+    padding: 8px;
+    z-index: 1;
+    font-weight: bold;
+    background-color: antiquewhite;
+}
+
+#nivel:hover, #start:hover{
+    scale: 1.1;
+}
+
+#start{
+    z-index: 1;
+    margin-top: 4rem;
+    width: 8rem;
+    height: 2.5rem;
+    border: solid;
+    border-radius: 20px;
+    background-color: antiquewhite;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start:active{
+    scale: 0.95;
+}
+
+
+
+#mosquito{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+#palco{
+    cursor: none;
+    box-sizing: border-box;
+    margin: auto;
+    position: relative;
+    margin-top: 5px;
+    padding: 5px;
+    
+}
+
+.areabotao{
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.areabotao:hover{
+    cursor: default;
+}
+
+.btns{
+    width: 55px;
+    height: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(152, 168, 219);
+    margin-left: 3px;
+    border-radius: 20px;
+}
+
+.btns:hover{
+    transform: scale(1.1);
+    box-shadow: 30px 270deg red;
+}
+
+.btns:active{
+    transform: translateZ(30px);
+}
+
+.raquete{
+    width: 150px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+.raquete :active{
+    transform: translateZ(3px)
+    
+}
+
+.painel{
+    position: absolute;
+    border-radius: 15px;
+    width:250px ;
+    padding: 10px;
+    bottom: 5px;
+    left: 5px;
+    border-top: solid 1px #fff;
+    background-color: #fff;
+    opacity: 0.5;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.containerFim{
+    background-color: darkgrey;
+}
