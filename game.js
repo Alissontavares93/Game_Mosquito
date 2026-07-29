@@ -2,10 +2,14 @@
 let borda = 5;
 let intervalo;
 let vidas = 1;
-let nivel_escolhido = document.getElementById('nivel')
 let palco = document.getElementById('palco');
 let nivel = localStorage.getItem('nivel')
 let velocidade=0
+
+//verifica se o nível existe
+if(!nivel){
+    location.href = 'index.html'
+}
 
 if(nivel === 'facil'){
     velocidade = 1800
