@@ -8,7 +8,7 @@ let velocidade=0
 
 //verifica se o nível existe
 if(!nivel){
-    location.href = 'index.html'
+    location.href = "index.html"
 }
 
 if(nivel === 'facil'){

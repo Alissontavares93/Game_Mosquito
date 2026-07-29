@@ -28,7 +28,7 @@ btn_start.onclick = () => {
     if(nivel.value ===''){
         window.alert('Informe o nível dp jogo!')
     }else{
-        sessionStorage.getItem('nivel',nivel.value)
+        localStorage.setItem('nivel',nivel.value)
         location.href = "game.html"
         }
 }
