@@ -37,44 +37,6 @@ ajustarTamanho();
 
 window.addEventListener('resize', ajustarTamanho);
 
-// // Criação do personagem
-// function criarMosquito() {
-
-//     if(!palco) return
-
-//     const mosquito = document.createElement('img');
-
-//     mosquito.id = 'mosquito';
-//     mosquito.src = 'imagens/mosquito.png';
-//     mosquito.style.position = 'absolute';
-
-//     mosquito.onclick = function () {
-//         this.remove();
-//     };
-
-//     let tamanhoMosquito = 50;
-
-//     const posicaoX = Math.floor(
-//         Math.random() * (palco.clientWidth - tamanhoMosquito)
-//     );
-
-//     const posicaoY = Math.floor(
-//         Math.random() * (palco.clientHeight - tamanhoMosquito)
-//     );
-
-//     tamanhoMosquito = Math.floor(Math.random()*50) + 50
-
-//     mosquito.style.width = tamanhoMosquito + 'px'
-//     mosquito.style.height = tamanhoMosquito + 'px'
-
-//     mosquito.style.left = posicaoX + "px";
-//     mosquito.style.top = posicaoY + "px";
-
-//     mosquito.style.animation = `pulse ${velocidade/1000} ease-in-out forwards`
-
-//     palco.appendChild(mosquito);
-// }
-
 // Criação do personagem
 function criarMosquito() {
 
