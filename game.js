@@ -1,7 +1,7 @@
 
 let borda = 5;
 let intervalo;
-let vidas = 1;
+let vidas = 3;
 let palco = document.getElementById('palco');
 let nivel = localStorage.getItem('nivel')
 let velocidade=0
@@ -91,12 +91,12 @@ function moverPersonagem() {
 
         if (mosquitoAntigo) {
             document.getElementById('vida'+vidas).src = 'imagens/vazio.png'
-            vidas +=1;
+            vidas --;
             mosquitoAntigo.remove();
             return;
         }
 
-        if(vidas === 4 ){
+        if(vidas === 0 ){
             clearInterval(intervalo);
             window.location.href = 'fim.html'
         }
