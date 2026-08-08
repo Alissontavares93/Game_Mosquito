@@ -11,6 +11,7 @@ if(!nivel){
     location.href = "index.html"
 }
 
+//Aplica o nível do jogo
 if(nivel === 'facil'){
     velocidade = 1800
 
@@ -74,8 +75,8 @@ function criarMosquito() {
 
     mosquito.style.left = posicaoX + "px";
     mosquito.style.top = posicaoY + "px";
-    // mosquito.style.animation = `pulse ${velocidade/1000}s ease-in-out forwards`
-    mosquito.style.animation = "pulse 0.3s ease-in-out infinite alternate"
+    mosquito.style.animation = "pulse ease-in-out 0.3s infinite alternate"
+
     palco.appendChild(mosquito);
 }
 
@@ -126,7 +127,6 @@ function parar() {
     if (mosquito) {
         mosquito.remove();
     }
-
 }
 
 // Movimentação da raquete
@@ -145,7 +145,6 @@ if (palco) palco.addEventListener('mousemove', (evento) => {
 
     raquete.style.top =
         y - ((raquete.offsetHeight / 2) + ajusteRaqueteY) + "px";
-
 });
 
 
@@ -160,7 +159,6 @@ if (areabotao) {
     areabotao.addEventListener("mouseleave", () => {
         raquete.style.display = "block";
     });
-
 }
 
 // Animação da raquete ao clicar
@@ -178,3 +176,15 @@ setTimeout(()=>{
     moverPersonagem()
 } 
 ,1000)
+
+let inicio;
+let rodando = false;
+
+document.getElementById("tempo").addEventListener("click",()=>{
+    inicio = performance.now();
+    rodando = true;
+})
+
+
+
+

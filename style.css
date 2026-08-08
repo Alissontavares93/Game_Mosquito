@@ -80,11 +80,8 @@ body{
     z-index: 0;
 }
 
-
-
 @keyframes pulse {
     from {
-        /* transform: scale(0); */
         transform: translateY(0);
     }
     to {
